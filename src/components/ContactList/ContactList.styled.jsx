@@ -17,7 +17,7 @@ export const ItemList = styled.label`
 export const ButtonDelete = styled.button`
   cursor: pointer;
   margin-left: 15px;
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 5px 10px;
   background-color: ${props => props.theme.colors.button};
   color: ${props => props.theme.colors.white};
