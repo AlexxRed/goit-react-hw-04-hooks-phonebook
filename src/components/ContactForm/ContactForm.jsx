@@ -16,7 +16,7 @@ const schema = yup.object().shape({
 
 const renderError = message => <p>{message}</p>;
 
-export default function ContactForm({ onSubmit }) {
+function ContactForm({ onSubmit }) {
   const handleSubmit = (values, { resetForm }) => {
     onSubmit(values);
     resetForm();
@@ -44,3 +44,5 @@ export default function ContactForm({ onSubmit }) {
 ContactForm.propTypes = {
   onSubmit: PropTypes.func.isRequired
 }
+
+export default ContactForm
